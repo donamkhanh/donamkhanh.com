@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-overlay {
+    background-image: url(https://websitedemos.net/portfolio-02/wp-content/uploads/sites/864/2021/05/bg-02-free-img.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  }
+  h6:after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 2px;
+    background: #758398;
+    margin-top: 0.7rem;
+  } 
+
+  @media (max-width: 1180px) {
+    .bg-overlay {
+      background-size: 450px auto;
+    }
+  }
